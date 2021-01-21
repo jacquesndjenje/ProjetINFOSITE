@@ -12,21 +12,7 @@
 	<img class="logo" src="LOGO.png">
 </head>
 <body>
-    <nav role="navigation">
-		<div id="menuToggle">
-		  <input type="checkbox" />
-		  <span></span>
-		  <span></span>
-		  <span></span>
-		  <ul id="menu">
-			<a href="ListeModules.html"><li>Module</li></a>
-			<a href="#"><li>Suivi</li></a>
-			<a href="logSite.html"><li>Déconnexion</li></a>
-			<img src="JUNIA.png">
-		  </ul>
-		  
-		</div>
-      </nav>
+<?php include "burgerMenu.php";?>
     <div class="block"> 
         <form enctype="multipart/form-data" action="Upload_secret.php" method="post">
             <h1>Ajouter un fichier :</h1>

@@ -11,6 +11,7 @@ echo '<head>';
 echo '<link rel="stylesheet" type="text/css" href="carre.css">';
 echo '</head>';
 echo '<body>';
+include 'burgerMenu.php';
 
 /* Gestion des erreurs lorsqu'on va se connecter a la base de donnee*/
 try

@@ -11,7 +11,7 @@ echo '<head>';
 echo '<link rel="stylesheet" type="text/css" href="carre.css">';
 echo '</head>';
 echo '<body>';
-
+include "burgerMenu.php";
 /* Gestion des erreurs lorsqu'on va se connecter a la base de donnee*/
 try
 {
@@ -116,7 +116,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=1">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=1">';
             echo $matiere1;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -152,7 +152,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=3">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=3">';
             echo $matiere3;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -170,7 +170,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-             echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=4">';
+             echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=4">';
             echo $matiere4;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -188,7 +188,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=5">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=5">';
             echo $matiere5;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -206,7 +206,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=6">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=6">';
             echo $matiere6;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -224,7 +224,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=7">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=7">';
             echo $matiere7;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -242,7 +242,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=8">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=8">';
             echo $matiere8;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -260,7 +260,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=9">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=9">';
             echo $matiere9;
             echo '</a> <h2/> </div>';
             echo  '</div>';
@@ -278,7 +278,7 @@ while ($donne = $reponse->fetch()) // Boucle utilisant la fonction fetch nous pe
         }
         else 
         {
-            echo '<div class="square">  <h2> <a href="ArboModuleProf.php?NumModule=10">';
+            echo '<div class="square">  <h2> <a href="AfficheListeSuiviProf.php?NumModule=10">';
             echo $matiere10;
             echo '</a> <h2/> </div>';
             echo  '</div>';

@@ -33,6 +33,7 @@ function AfficheListeSuiviProf($bdd, $NumModule)
         }
     }
 }
+include "burgerMenu.php";
 ?>
 
 

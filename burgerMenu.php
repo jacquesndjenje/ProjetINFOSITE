@@ -33,77 +33,7 @@
 </nav>
 
 <style type="text/css">
-    body {
-        font-family: sans-serif;
-        /* police */
-        background-color: #a1bfbe;
-        /* couleur gris  */
-    }
-
-    .header {
-        width: 100%;
-        background-color: #036d68;
-        height: 50px;
-        text-align: right;
-        position: absolute;
-        top: 0%;
-        left: 0%;
-    }
-
-    .logo {
-        position: absolute;
-        top: 0;
-        left: 85%;
-        width: 50px;
-        height: 50px;
-    }
-
-    h1 {
-        /* parametre boite login */
-        font-size: 50px;
-        /* taille texte */
-        position: absolute;
-        /* positionnement absolu pour gerer les decalages(haut bas droite gauche)*/
-        top: -25px;
-        left: 50%;
-        /* milieu horizontal */
-        transform: translate(-50%, -50%);
-        /* translater le bloc*/
-        color: #fd5d38;
-        /* couleur */
-        margin-top: 50px;
-    }
-
-    p {
-        font-size: 20px;
-        /* taille texrte */
-    }
-
-    .btnsuppr {
-        cursor: pointer;
-        /* main lorsque le curseur est sur le bouton */
-        color: #fd5d38;
-        /* couleur texte */
-        position: absolute;
-        /* position absolue */
-        right: 10%;
-        /* position horizontale */
-        top: 80%;
-        /* position verticale */
-        height: 80px;
-        /* hauteur */
-        width: 200px;
-        /* largeur */
-        border: 2px solid #fd5d38;
-        /* bordure avec couleur */
-        font-size: 18px;
-        /* taille texte */
-        background: #036d68;
-        /* couleur de fond */
-        text-align: center;
-        /* alignement du texte centré */
-        border-radius: 15px;
-    }
+    
 
     #menuToggle {
         position: relative;
@@ -242,7 +172,7 @@
         transform: none;
     }
 
-    img {
+    #menu img {
         position: relative;
         bottom: -320px;
         left: -50px;

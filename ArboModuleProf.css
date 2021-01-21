@@ -29,6 +29,7 @@ body
     color: #FD5D38; /* couleur */
     margin-top: 50px;
 }
+a{text-decoration:none;}
 
 p{
 	font-size: 20px; /* taille texrte */
