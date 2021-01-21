@@ -1,0 +1,140 @@
+body
+{
+
+	font-family: sans-serif; /* police */
+	background-color: #a1bfbe; /* couleur gris  */
+}
+.header
+{
+  width: 100%;
+    background-color: #036D68;
+    height:50px;
+    text-align:right;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.logo{ position: absolute;
+  top: 0;
+  left: 85%;
+   width: 50px;
+   height: 50px;
+}
+   h1{ /* parametre boite login */
+   	font-size: 50px; /* taille texte */
+    position: absolute; /* positionnement absolu pour gerer les decalages(haut bas droite gauche)*/
+    top: -25px;
+    left: 50%; /* milieu horizontal */
+    transform: translate(-50%,-50%); /* translater le bloc*/
+    color: #FD5D38; /* couleur */
+    margin-top: 50px;
+}
+.etudiant_box_container{
+  overflow: auto; /* eviter le depassement */
+  position: absolute; /* la position */
+  top: 30%; /* regler la position des carres a partir du haut */
+  left: 10%; /* regler la position des carrees a partir de la gauche  */
+}
+.etudiant_box{
+    position:relative;
+    top:50px;
+    margin-top:5px;
+    margin-left:140px;
+	color: #FD5D38; /* couleur texte ( a changer pour le statut) */
+	background-color: #036D68; /* couleur fond*/
+	text-align: left; /* alignement  a gauche du texte */
+	padding: 8px 8px; /* écart entre la balise et le texte */
+  float: left;
+	width: 1200px; /* largeur div */
+	height: 60px; /* hauteur div */
+	border: 2px solid #FD5D38; /* bordure 2 px couleur */
+	border-radius: 15px;
+}
+
+.etudiant_box_gray{
+    position:relative;
+    top:50px;
+    margin-top:5px;
+    margin-left:140px;
+	color: #FD5D38; /* couleur texte ( a changer pour le statut) */
+	background-color: gray; /* couleur fond*/
+	text-align: left; /* alignement  a gauche du texte */
+	padding: 8px 8px; /* écart entre la balise et le texte */
+  float: left;
+	width: 1200px; /* largeur div */
+	height: 60px; /* hauteur div */
+	border: 2px solid #FD5D38; /* bordure 2 px couleur */
+	border-radius: 15px;
+}
+.etudiant_box_red{
+    position:relative;
+    top:50px;
+    margin-top:5px;
+    margin-left:140px;
+	color: gray; /* couleur texte ( a changer pour le statut) */
+	background-color: red; /* couleur fond*/
+	text-align: left; /* alignement  a gauche du texte */
+	padding: 8px 8px; /* écart entre la balise et le texte */
+  float: left;
+	width: 1200px; /* largeur div */
+	height: 60px; /* hauteur div */
+	border: 2px solid #FD5D38; /* bordure 2 px couleur */
+	border-radius: 15px;
+}
+
+#jauge{
+	position: absolute; /* position relative a la div */
+	left: 200px; /* position horizontale */
+	width: 600px; /* position verticale */ 
+
+}
+
+
+.inscription{
+cursor: pointer; /* main lorsque le curseur est sur le bouton */
+  color: #FD5D38; /* couleur texte */
+  position: relative; /* position absolue */
+  left: 200px; /* position horizontale */ 
+  bottom:-60px;
+  height: 80px; /* hauteur */
+  width: 200px; /* largeur */ 
+    border: 2px solid #FD5D38; /* bordure avec couleur */
+    font-size:18px; /* taille texte */ 
+    background:#036D68; /* couleur de fond */ 
+    text-align:center; /* alignement du texte centré */
+    border-radius: 15px;
+}
+
+.btnadd{	
+	cursor: pointer; /* main lorsque le curseur est sur le bouton */
+	color: #FD5D38; /* couleur texte */
+	position: relative; /* position absolue */
+	left:900px; /* position horizontale */ 
+	bottom:-60px; /* position verticale */
+	height: 80px; /* hauteur */
+	width: 200px; /* largeur */ 
+  	border: 2px solid #FD5D38; /* bordure avec couleur */
+  	font-size:18px; /* taille texte */ 
+  	background:#036D68; /* couleur de fond */ 
+  	text-align:center; /* alignement du texte centré */
+  	border-radius: 15px;
+}
+
+.switch {
+  cursor: pointer; /* main lorsque le curseur est sur le switch */
+  position: relative; /* position relative */ 
+  float: right; /* position  du switch a droite */  
+  bottom: 8px;
+  display: inline-block; /* permet de rentrér des valeur de dimension */
+  width: 50px; /* largeur */ 
+  height: 34px; /* hauteur */ 
+  padding: 8px 8px;
+}
+
+/* Hide default HTML checkbox */
+.switch input { /* parametre du texte entré dans le switch (ici rien ) */ 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
