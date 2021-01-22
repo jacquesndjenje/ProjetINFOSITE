@@ -18,16 +18,17 @@
         die('Erreur : '.$e->getMessage());
     }
     $Valide=0;
-    if(isset($_POST['Key'])){
-        $reponse = $bdd->query('SELECT * FROM Autoriser');
+    if(isset($_POST['Key'])){ //On verifie que l'utilisateur a bien écrit quelquechose 
+        $reponse = $bdd->query('SELECT * FROM Autoriser');//Selection base de données
 
         while($donnees=$reponse->fetch()){
+		//On verifie que les données rentrées correspondent avec la base de donnée
             if($donnees['token']==$_POST['Key']) {
                 if($donnees['idUtilisateur_ext']==$_SESSION['ID_Actuel']){
                     if($donnees ['new_inscription']==1){
                         $NumModule=(string)$donnees['idModule_ext'];
-                        $Module='M'.$NumModule;
-
+                        $Module='M'.$NumModule;//Concaténation
+			//Affectation d'un nouvelle valeur de module dans la base de donnée
                         if ($Module==1) {
                             $req = $bdd->prepare('UPDATE Utilisateur SET M1 =0 WHERE idUtilisateur = :ID_Actuel');
                             $req->execute(array(
@@ -97,14 +98,14 @@
             };
         };
     };
-
+	//En fonction de la variable $valide on choisi ou aller
     if($Valide==1){
         header("location:ListeModules.php");
     }
 
     else{
         $message='Token inexistant';
-        include "InscriptionEleveModule.php";
+        include "InscriptionEleveModule.php";//Affichage d'un message d'erreur si mauvais token avec réaffichage de la page html
     }
     ?>
 </body>
